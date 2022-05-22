@@ -9,6 +9,10 @@ public class ScaffoldShaft {
     int tempb;
     int temp2b;
 
+    public ScaffoldShaft() {
+        this.scaffloddima = scaffloddima;
+        this.scaffloddimb = scaffloddimb;
+    }
 
     public int getFreesizea() {
         return freesizea;
@@ -81,10 +85,5 @@ public class ScaffoldShaft {
         this.temp2b = temp2b;
     }
 
-    public ScaffoldShaft() {
-        this.tempa = this.tempa;
-        this.temp2a = this.temp2a;
-        this.tempb = this.tempb;
-        this.temp2b = this.temp2b;
-    }
+
 }

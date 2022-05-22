@@ -8,9 +8,9 @@ public class ScaffoldShaftService {
 
     ArrayList<Integer> scaffolddimensions = new ArrayList<>();
     ArrayList<Integer> scaffolddimensionreal = new ArrayList<>();
+    public ArrayList<ScaffoldShaft> scaffoldadd = new ArrayList<ScaffoldShaft>();
 
-
-
+    int sizelogic = 50;
     int one = 45;
     int two = 73;
     int tree = 109;
@@ -19,6 +19,7 @@ public class ScaffoldShaftService {
     int six = 257;
     int seven = 307;
     int realdemension = 19;
+
 
     public  void addscaffolddimensions(){
         scaffolddimensions.add(one);
@@ -42,18 +43,23 @@ public class ScaffoldShaftService {
 
 
     public void scaffoldasidebget(ScaffoldShaft temp) {
-        int sizelogic = 50;
+
         int size = temp.getTempb() - temp.getTemp2b()  - temp.getTemp2b();
 
         for (Integer i : scaffolddimensionreal) {
-            int freesize = size - i;
+            int freesize = ((size - i) /2);
             int scaffolddim = i - realdemension;
 
             if (i <= size) {
-                temp.setScaffloddimb(scaffolddim);
-                temp.setFreesizeb((size - i) /2);
 
-            }else if(freesize > sizelogic){
+                temp.setScaffloddimb(scaffolddim);
+                temp.setFreesizeb(freesize);
+            if (freesize > sizelogic){
+                for (Integer x : scaffolddimensionreal) {
+                    //temp.setScaffloddimb(i-realdemension && x -realdemension);
+                }
+            }
+
 
             }
 
@@ -63,7 +69,7 @@ public class ScaffoldShaftService {
 
 
     public  void scaffoldasideaget(ScaffoldShaft temp) {
-        int sizelogic = 50;
+
         int size = temp.getTempa() - temp.getTemp2a() - temp.getTemp2a();
 
         for (Integer i : scaffolddimensionreal) {
@@ -75,7 +81,7 @@ public class ScaffoldShaftService {
                 temp.setFreesizea((size-i)/2);
 
             }else if (freesize > sizelogic){
-                for (Integer x : scaffolddimensionreal){
+
 
 
                 }
@@ -87,4 +93,4 @@ public class ScaffoldShaftService {
             }
         }
     }
-}
+    
