@@ -32,8 +32,8 @@ public class ScaffoldController {
         shaftService.addscaffolddimensions();
         shaftService.addscaffolddimensionsreal();
         shaftService.scaffoldasideaget(scaffold);
-        resulta.setText(Integer.toString(scaffold.getScaffloddima()));
-        freeaspace.setText(Integer.toString(scaffold.getFreesizea()));
+        resulta.setText((scaffold.getScaffloddima())+" [cm]");
+        freeaspace.setText((scaffold.getFreesizea())+" [cm]");
 
     }
     @FXML
@@ -45,8 +45,8 @@ public class ScaffoldController {
         shaftService.addscaffolddimensions();
         shaftService.addscaffolddimensionsreal();
         shaftService.scaffoldasidebget(scaffold);
-        resultb.setText(Integer.toString(scaffold.getScaffloddimb()));
-        freebspace.setText(Integer.toString(scaffold.getFreesizeb()));
+        resultb.setText((scaffold.getScaffloddimb())+" [cm]");
+        freebspace.setText((scaffold.getFreesizeb())+" [cm]");
     }
 
 }

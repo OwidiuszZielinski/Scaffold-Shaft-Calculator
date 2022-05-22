@@ -14,13 +14,25 @@
             <children>
                 <ImageView fx:id="imageborder" fitHeight="600.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@ScaffoldBorder.png" />
+                        <Image url="@../../../ScaffoldBorder.png" />
                     </image>
                 </ImageView>
-                <TextField fx:id="setwalla" layoutX="344.0" layoutY="166.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
-                <TextField fx:id="setdima" layoutX="350.0" layoutY="252.0" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: #00a8f3;" />
-                <TextField fx:id="setwallb" layoutX="344.0" layoutY="336.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
-                <TextField fx:id="setdimb" layoutX="347.0" layoutY="416.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="setwalla" layoutX="344.0" layoutY="166.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setdima" layoutX="350.0" layoutY="252.0" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: #00a8f3;">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setwallb" layoutX="344.0" layoutY="336.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setdimb" layoutX="347.0" layoutY="416.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextField>
                 <TextField fx:id="resulta" layoutX="727.0" layoutY="210.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
                 <TextField fx:id="resultb" layoutX="727.0" layoutY="360.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
                 <Button fx:id="calculatea" layoutX="548.0" layoutY="218.0" mnemonicParsing="false" onAction="#onActionButton" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #00a8f3;" text="Calculate a">
@@ -45,6 +57,26 @@
                 </Text>
                 <TextField fx:id="freeaspace" layoutX="809.0" layoutY="452.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
                 <TextField fx:id="freebspace" layoutX="809.0" layoutY="484.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
+                <Text fx:id="cm" layoutX="455.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="cm1" layoutX="455.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="cm2" layoutX="455.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="cm3" layoutX="455.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
             </children>
         </AnchorPane>
     </children>

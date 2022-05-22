@@ -1,11 +1,14 @@
 package com.example.scaffold.scaffold;
 
+import java.util.ArrayList;
+
 public class ScaffoldShaft {
 
     int tempa;
     int temp2a;
     int tempb;
     int temp2b;
+
 
     public int getFreesizea() {
         return freesizea;

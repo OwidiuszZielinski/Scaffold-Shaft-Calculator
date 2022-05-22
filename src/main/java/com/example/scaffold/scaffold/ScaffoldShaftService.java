@@ -8,7 +8,7 @@ public class ScaffoldShaftService {
 
     ArrayList<Integer> scaffolddimensions = new ArrayList<>();
     ArrayList<Integer> scaffolddimensionreal = new ArrayList<>();
-    ArrayList<Integer> scaffold = new ArrayList<Integer>();
+
 
 
     int one = 45;
@@ -76,6 +76,7 @@ public class ScaffoldShaftService {
 
             }else if (freesize > sizelogic){
                 for (Integer x : scaffolddimensionreal){
+
 
                 }
 
