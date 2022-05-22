@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vbox" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scaffold.ScaffoldController">
+    <children>
+        <AnchorPane fx:id="anchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: 3f48cc;" VBox.vgrow="ALWAYS">
+            <children>
+                <ImageView fx:id="imageborder" fitHeight="600.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ScaffoldBorder.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="setwalla" layoutX="344.0" layoutY="166.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="setdima" layoutX="350.0" layoutY="252.0" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="setwallb" layoutX="344.0" layoutY="336.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="setdimb" layoutX="347.0" layoutY="416.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="resulta" layoutX="727.0" layoutY="210.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
+                <TextField fx:id="resultb" layoutX="727.0" layoutY="360.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
+                <Button fx:id="calculatea" layoutX="548.0" layoutY="218.0" mnemonicParsing="false" onAction="#onActionButton" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #00a8f3;" text="Calculate a">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="calcualteb" layoutX="548.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionButton2" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #00a8f3;" text="Calculate b">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Text fx:id="textfree" fill="#00a8f3" layoutX="644.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall a free space" wrappingWidth="158.0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textfree2" fill="#00a8f3" layoutX="644.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall b free space" wrappingWidth="158.0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="freeaspace" layoutX="809.0" layoutY="452.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
+                <TextField fx:id="freebspace" layoutX="809.0" layoutY="484.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
