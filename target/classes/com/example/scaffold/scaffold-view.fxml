@@ -10,73 +10,149 @@
 
 <VBox fx:id="vbox" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scaffold.ScaffoldController">
     <children>
-        <AnchorPane fx:id="anchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: 3f48cc;" VBox.vgrow="ALWAYS">
+        <AnchorPane fx:id="anchor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1166.0" style="-fx-background-color: #827a7a;" VBox.vgrow="ALWAYS">
             <children>
-                <ImageView fx:id="imageborder" fitHeight="600.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+                <TextField fx:id="setwalla" layoutX="76.0" layoutY="141.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas" size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setwallb" layoutX="336.0" layoutY="141.0" prefHeight="51.0" prefWidth="164.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas" size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setfreewalla" layoutX="569.0" layoutY="239.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas" size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="setfreewallb" layoutX="569.0" layoutY="344.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas" size="24.0" />
+                    </font></TextField>
+                <TextField fx:id="resulta" layoutX="770.0" layoutY="424.0" prefHeight="66.0" prefWidth="354.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                    </font></TextField>
+                <TextField fx:id="resultb" layoutX="770.0" layoutY="502.0" prefHeight="66.0" prefWidth="354.0" style="-fx-background-color: #cca792;">
+                    <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                    </font></TextField>
+                <Button fx:id="calculatea" layoutX="581.0" layoutY="432.0" mnemonicParsing="false" onAction="#onActionButton" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #89573a;" text="Calculate a">
+                    <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="calcualteb" layoutX="581.0" layoutY="511.0" mnemonicParsing="false" onAction="#onActionButton2" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #89573a;" text="Calculate b">
+                    <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Text fx:id="textfree" layoutX="774.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall a free space" wrappingWidth="189.0">
+                    <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="freeaspace" layoutX="1001.0" layoutY="237.0" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: #51c06e;" />
+                <TextField fx:id="freebspace" layoutX="1001.0" layoutY="293.0" prefHeight="48.0" prefWidth="95.0" style="-fx-background-color: #51c06e;" />
+                <Text fx:id="discryption" layoutX="86.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall a [cm]" textAlignment="CENTER" wrappingWidth="153.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption1" layoutX="30.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Required distance from the wall a [cm]" wrappingWidth="512.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption2" layoutX="30.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Required distance from the wall b [cm]" wrappingWidth="512.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption3" layoutX="341.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall b [cm]" textAlignment="CENTER" wrappingWidth="153.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption4" layoutX="924.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--&gt;" textAlignment="CENTER" wrappingWidth="95.0">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption5" layoutX="510.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---------&gt;" textAlignment="CENTER" wrappingWidth="141.0">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption6" layoutX="589.0" layoutY="209.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----&gt;" textAlignment="CENTER" wrappingWidth="124.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption7" layoutX="589.0" layoutY="318.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--&gt;" textAlignment="CENTER" wrappingWidth="124.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption8" layoutX="613.0" layoutY="502.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;" textAlignment="CENTER" wrappingWidth="78.0">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption9" layoutX="589.0" layoutY="423.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;" textAlignment="CENTER" wrappingWidth="124.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="reults" layoutX="834.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results" textAlignment="CENTER" wrappingWidth="227.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="48.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption11" layoutX="903.0" layoutY="361.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------" textAlignment="CENTER" wrappingWidth="489.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textfree1" layoutX="774.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall b free space" wrappingWidth="189.0">
+                    <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption23" layoutX="924.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--&gt;" textAlignment="CENTER" wrappingWidth="95.0">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption22" layoutX="501.0" layoutY="363.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------" textAlignment="CENTER" wrappingWidth="489.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption13" layoutX="747.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------------------------------" textAlignment="RIGHT" wrappingWidth="400.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="discryption14" layoutX="747.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------------------------------" textAlignment="RIGHT" wrappingWidth="400.13671875">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="title" layoutX="423.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[ScaffoldModule]" textAlignment="CENTER" wrappingWidth="433.0">
+                    <font>
+                        <Font name="Consolas Bold" size="46.0" />
+                    </font>
+                </Text>
+                <Text fx:id="modulesyouneed" layoutX="770.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modules which you need:" wrappingWidth="342.0">
+                    <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="3.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../ScaffoldBorder.png" />
+                        <Image url="@C:\Users\owi19\Desktop\LibraryFXML\Scaffold\src\main\resources\ScaffoldBorder.png" />
                     </image>
                 </ImageView>
-                <TextField fx:id="setwalla" layoutX="344.0" layoutY="166.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
-                    <font>
-                        <Font size="24.0" />
-                    </font></TextField>
-                <TextField fx:id="setdima" layoutX="350.0" layoutY="252.0" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: #00a8f3;">
-                    <font>
-                        <Font size="24.0" />
-                    </font></TextField>
-                <TextField fx:id="setwallb" layoutX="344.0" layoutY="336.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
-                    <font>
-                        <Font size="24.0" />
-                    </font></TextField>
-                <TextField fx:id="setdimb" layoutX="347.0" layoutY="416.0" prefHeight="48.0" prefWidth="164.0" style="-fx-background-color: #00a8f3;">
-                    <font>
-                        <Font size="24.0" />
-                    </font></TextField>
-                <TextField fx:id="resulta" layoutX="727.0" layoutY="210.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
-                <TextField fx:id="resultb" layoutX="727.0" layoutY="360.0" prefHeight="66.0" prefWidth="149.0" style="-fx-background-color: #00a8f3;" />
-                <Button fx:id="calculatea" layoutX="548.0" layoutY="218.0" mnemonicParsing="false" onAction="#onActionButton" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #00a8f3;" text="Calculate a">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Button>
-                <Button fx:id="calcualteb" layoutX="548.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionButton2" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #00a8f3;" text="Calculate b">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                </Button>
-                <Text fx:id="textfree" fill="#00a8f3" layoutX="644.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall a free space" wrappingWidth="158.0">
-                    <font>
-                        <Font name="System Bold" size="18.0" />
-                    </font>
-                </Text>
-                <Text fx:id="textfree2" fill="#00a8f3" layoutX="644.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wall b free space" wrappingWidth="158.0">
-                    <font>
-                        <Font name="System Bold" size="18.0" />
-                    </font>
-                </Text>
-                <TextField fx:id="freeaspace" layoutX="809.0" layoutY="452.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
-                <TextField fx:id="freebspace" layoutX="809.0" layoutY="484.0" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #06a132;" />
-                <Text fx:id="cm" layoutX="455.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Text>
-                <Text fx:id="cm1" layoutX="455.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Text>
-                <Text fx:id="cm2" layoutX="455.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Text>
-                <Text fx:id="cm3" layoutX="455.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[cm]" wrappingWidth="52.13671875">
-                    <font>
-                        <Font name="System Bold" size="24.0" />
-                    </font>
-                </Text>
             </children>
         </AnchorPane>
     </children>
