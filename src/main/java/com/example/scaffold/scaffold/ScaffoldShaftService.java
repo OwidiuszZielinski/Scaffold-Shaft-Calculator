@@ -1,16 +1,16 @@
 package com.example.scaffold.scaffold;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class ScaffoldShaftService {
 
 
-
     ArrayList<Integer> scaffolddimensions = new ArrayList<>();
     ArrayList<Integer> scaffolddimensionreal = new ArrayList<>();
-    public ArrayList<ScaffoldShaft> scaffoldadd = new ArrayList<ScaffoldShaft>();
 
-    int sizelogic = 50;
+
     int one = 45;
     int two = 73;
     int tree = 109;
@@ -19,78 +19,81 @@ public class ScaffoldShaftService {
     int six = 257;
     int seven = 307;
     int realdemension = 19;
+    String plus = "+";
 
-
-    public  void addscaffolddimensions(){
-        scaffolddimensions.add(one);
-        scaffolddimensions.add(two);
-        scaffolddimensions.add(tree);
-        scaffolddimensions.add(four);
-        scaffolddimensions.add(five);
-        scaffolddimensions.add(six);
-        scaffolddimensions.add(seven);
+    public void addscaffolddimensions() {
+        scaffolddimensions.addAll(Arrays.asList(one, two, tree, four, five, six, seven));
+        scaffolddimensions.sort(Comparator.reverseOrder());
 
     }
 
-    public  void addscaffolddimensionsreal(){
-        for (Integer i:scaffolddimensions) {
-            scaffolddimensionreal.add(i+realdemension);
+    public void addscaffolddimensionsreal() {
+        for (Integer i : scaffolddimensions) {
+            scaffolddimensionreal.add(i + realdemension);
         }
 
     }
 
+    public void scaffoldasideaget(ScaffoldShaft temp) {
 
+        ArrayList result = new ArrayList();
+        int size = temp.getDeclaredwalla() - temp.getDeclaredfreespacewalla() - temp.getDeclaredfreespacewalla();
+
+
+        for (Integer x : scaffolddimensionreal) {
+
+            int module = x - realdemension;
+            int quantity = (size / x);
+            size = (size - quantity * x);
+            temp.setFreespacea(size / 2);
+
+            if (quantity > 0) {
+                result.add(quantity);
+                result.add("x");
+                result.add(module);
+                result.add("cm" + " " + plus);
+
+            }
+        }
+        result.remove(result.size() - 1);
+        String formattedString = result.toString()
+                .replace(",", "")
+                .replace("[", "")
+                .replace("]", "")
+                .trim();
+        temp.setResulta(formattedString);
+    }
 
 
     public void scaffoldasidebget(ScaffoldShaft temp) {
 
-        int size = temp.getTempb() - temp.getTemp2b()  - temp.getTemp2b();
+        ArrayList result = new ArrayList();
+        int size = temp.getDeclaredwallb() - temp.getDeclaredfreespacewallb() - temp.getDeclaredfreespacewallb();
 
-        for (Integer i : scaffolddimensionreal) {
-            int freesize = ((size - i) /2);
-            int scaffolddim = i - realdemension;
+        for (Integer x : scaffolddimensionreal) {
 
-            if (i <= size) {
+            int module = x - realdemension;
+            int quantity = (size / x);
 
-                temp.setScaffloddimb(scaffolddim);
-                temp.setFreesizeb(freesize);
-            if (freesize > sizelogic){
-                for (Integer x : scaffolddimensionreal) {
-                    //temp.setScaffloddimb(i-realdemension && x -realdemension);
-                }
-            }
+            size = (size - quantity * x);
+            temp.setFreespaceb(size / 2);
 
+            if (quantity > 0) {
+
+                result.add(quantity);
+                result.add("x");
+                result.add(module);
+                result.add("cm" + " " + plus);
 
             }
 
         }
-
+        result.remove(result.size() - 1);
+        String formattedString = result.toString()
+                .replace(",", "")
+                .replace("[", "")
+                .replace("]", "")
+                .trim();
+        temp.setResultb(formattedString);
     }
-
-
-    public  void scaffoldasideaget(ScaffoldShaft temp) {
-
-        int size = temp.getTempa() - temp.getTemp2a() - temp.getTemp2a();
-
-        for (Integer i : scaffolddimensionreal) {
-            int freesize = size - i;
-            int scaffolddim = i - realdemension;
-
-            if (i <= size) {
-                temp.setScaffloddima(scaffolddim);
-                temp.setFreesizea((size-i)/2);
-
-            }else if (freesize > sizelogic){
-
-
-
-                }
-
-
-
-
-
-            }
-        }
-    }
-    
+}

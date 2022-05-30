@@ -1,89 +1,81 @@
 package com.example.scaffold.scaffold;
 
-import java.util.ArrayList;
-
 public class ScaffoldShaft {
 
-    int tempa;
-    int temp2a;
-    int tempb;
-    int temp2b;
 
-    public ScaffoldShaft() {
-        this.scaffloddima = scaffloddima;
-        this.scaffloddimb = scaffloddimb;
+    int declaredwalla;
+    int declaredfreespacewalla;
+    int declaredwallb;
+    int declaredfreespacewallb;
+    int freespacea;
+    int freespaceb;
+    String resultb;
+    String resulta;
+
+    public int getDeclaredwalla() {
+        return declaredwalla;
     }
 
-    public int getFreesizea() {
-        return freesizea;
+    public void setDeclaredwalla(int declaredwalla) {
+        this.declaredwalla = declaredwalla;
     }
 
-    public void setFreesizea(int freesizea) {
-        this.freesizea = freesizea;
+    public int getDeclaredfreespacewalla() {
+        return declaredfreespacewalla;
     }
 
-    public int getFreesizeb() {
-        return freesizeb;
+    public void setDeclaredfreespacewalla(int declaredfreespacewalla) {
+        this.declaredfreespacewalla = declaredfreespacewalla;
     }
 
-    public void setFreesizeb(int freesizeb) {
-        this.freesizeb = freesizeb;
+    public int getDeclaredwallb() {
+        return declaredwallb;
     }
 
-    int freesizea;
-    int freesizeb;
-
-    public int getScaffloddima() {
-        return scaffloddima;
+    public void setDeclaredwallb(int declaredwallb) {
+        this.declaredwallb = declaredwallb;
     }
 
-    public void setScaffloddima(int scaffloddima) {
-        this.scaffloddima = scaffloddima;
+    public int getDeclaredfreespacewallb() {
+        return declaredfreespacewallb;
     }
 
-    int scaffloddima;
-
-    public int getScaffloddimb() {
-        return scaffloddimb;
+    public void setDeclaredfreespacewallb(int declaredfreespacewallb) {
+        this.declaredfreespacewallb = declaredfreespacewallb;
     }
 
-    public void setScaffloddimb(int scaffloddimb) {
-        this.scaffloddimb = scaffloddimb;
+    public int getFreespacea() {
+        return freespacea;
     }
 
-    int scaffloddimb;
-
-    public int getTempa() {
-        return this.tempa;
+    public void setFreespacea(int freespacea) {
+        this.freespacea = freespacea;
     }
 
-    public void setTempa(int tempa) {
-        this.tempa = tempa;
+    public int getFreespaceb() {
+        return freespaceb;
     }
 
-    public int getTemp2a() {
-        return this.temp2a;
-    }
-
-    public void setTemp2a(int temp2a) {
-        this.temp2a = temp2a;
-    }
-
-    public int getTempb() {
-        return this.tempb;
-    }
-
-    public void setTempb(int tempb) {
-        this.tempb = tempb;
-    }
-
-    public int getTemp2b() {
-        return this.temp2b;
-    }
-
-    public void setTemp2b(int temp2b) {
-        this.temp2b = temp2b;
+    public void setFreespaceb(int freespaceb) {
+        this.freespaceb = freespaceb;
     }
 
 
+
+    public String getResultb() {
+        return resultb;
+    }
+
+    public void setResultb(String resultb) {
+        this.resultb = resultb;
+    }
+
+    public String getResulta() {
+        return resulta;
+    }
+
+    public void setResulta(String resulta) {
+        this.resulta = resulta;
+    }
 }
+
