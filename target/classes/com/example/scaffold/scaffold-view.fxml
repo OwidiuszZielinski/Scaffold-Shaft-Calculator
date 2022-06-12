@@ -148,11 +148,7 @@
                         <Font name="Consolas Bold" size="24.0" />
                     </font>
                 </Text>
-                <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="3.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@C:\Users\owi19\Desktop\LibraryFXML\Scaffold\src\main\resources\ScaffoldBorder.png" />
-                    </image>
-                </ImageView>
+
             </children>
         </AnchorPane>
     </children>

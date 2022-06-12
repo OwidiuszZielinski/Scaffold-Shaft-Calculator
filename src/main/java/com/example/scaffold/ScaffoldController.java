@@ -4,12 +4,7 @@ import com.example.scaffold.scaffold.ScaffoldShaft;
 import com.example.scaffold.scaffold.ScaffoldShaftService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ScaffoldController {
 
@@ -34,8 +29,8 @@ public class ScaffoldController {
         shaftService.addscaffolddimensions();
         shaftService.addscaffolddimensionsreal();
         shaftService.scaffoldasideaget(scaffold);
-        resulta.setText((scaffold.getResulta()));
-        freeaspace.setText(Integer.toString(scaffold.getFreespacea()));
+        resulta.setText((scaffold.getResulta())+" cm");
+        freeaspace.setText(Integer.toString(scaffold.getFreespacea())+" [cm]");
 
     }
     @FXML
@@ -48,8 +43,8 @@ public class ScaffoldController {
         shaftService.addscaffolddimensions();
         shaftService.addscaffolddimensionsreal();
         shaftService.scaffoldasidebget(scaffold);
-        resultb.setText((scaffold.getResultb()));
-        freebspace.setText(Integer.toString(scaffold.getFreespaceb()));
+        resultb.setText((scaffold.getResultb())+" cm");
+        freebspace.setText(Integer.toString(scaffold.getFreespaceb())+" [cm]");
     }
 
 }

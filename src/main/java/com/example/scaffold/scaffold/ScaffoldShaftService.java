@@ -20,6 +20,7 @@ public class ScaffoldShaftService {
     int seven = 307;
     int realdemension = 19;
     String plus = "+";
+    //dopisz aby 19 cm bylo dodawane do caloego wyrazenia
 
     public void addscaffolddimensions() {
         scaffolddimensions.addAll(Arrays.asList(one, two, tree, four, five, six, seven));
@@ -87,13 +88,16 @@ public class ScaffoldShaftService {
 
             }
 
+
         }
         result.remove(result.size() - 1);
+
         String formattedString = result.toString()
                 .replace(",", "")
                 .replace("[", "")
                 .replace("]", "")
                 .trim();
         temp.setResultb(formattedString);
+        result.add("cm");
     }
 }
