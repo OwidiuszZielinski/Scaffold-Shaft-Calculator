@@ -27,7 +27,7 @@ public class ScaffoldController {
         scaffold.setDeclaredwalla(Integer.parseInt(setwalla.getText()));
         scaffold.setDeclaredfreespacewalla(Integer.parseInt(setfreewalla.getText()));
         shaftService.addscaffolddimensions();
-        shaftService.addscaffolddimensionsreal();
+
         shaftService.scaffoldasideaget(scaffold);
         resulta.setText((scaffold.getResulta())+" cm");
         freeaspace.setText(Integer.toString(scaffold.getFreespacea())+" [cm]");
@@ -41,7 +41,7 @@ public class ScaffoldController {
         scaffold.setDeclaredwallb(Integer.parseInt(setwallb.getText()));
         scaffold.setDeclaredfreespacewallb(Integer.parseInt(setfreewallb.getText()));
         shaftService.addscaffolddimensions();
-        shaftService.addscaffolddimensionsreal();
+
         shaftService.scaffoldasidebget(scaffold);
         resultb.setText((scaffold.getResultb())+" cm");
         freebspace.setText(Integer.toString(scaffold.getFreespaceb())+" [cm]");

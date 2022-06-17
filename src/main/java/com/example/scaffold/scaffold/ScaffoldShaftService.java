@@ -28,22 +28,17 @@ public class ScaffoldShaftService {
 
     }
 
-    public void addscaffolddimensionsreal() {
-        for (Integer i : scaffolddimensions) {
-            scaffolddimensionreal.add(i + realdemension);
-        }
 
-    }
 
     public void scaffoldasideaget(ScaffoldShaft temp) {
 
         ArrayList result = new ArrayList();
-        int size = temp.getDeclaredwalla() - temp.getDeclaredfreespacewalla() - temp.getDeclaredfreespacewalla();
+        int size = temp.getDeclaredwalla() - temp.getDeclaredfreespacewalla() - temp.getDeclaredfreespacewalla() - realdemension;
 
 
-        for (Integer x : scaffolddimensionreal) {
+        for (Integer x : scaffolddimensions) {
 
-            int module = x - realdemension;
+            int module = x;
             int quantity = (size / x);
             size = (size - quantity * x);
             temp.setFreespacea(size / 2);
@@ -69,11 +64,11 @@ public class ScaffoldShaftService {
     public void scaffoldasidebget(ScaffoldShaft temp) {
 
         ArrayList result = new ArrayList();
-        int size = temp.getDeclaredwallb() - temp.getDeclaredfreespacewallb() - temp.getDeclaredfreespacewallb();
+        int size = temp.getDeclaredwallb() - temp.getDeclaredfreespacewallb() - temp.getDeclaredfreespacewallb() - realdemension;
 
-        for (Integer x : scaffolddimensionreal) {
+        for (Integer x : scaffolddimensions) {
 
-            int module = x - realdemension;
+            int module = x ;
             int quantity = (size / x);
 
             size = (size - quantity * x);
